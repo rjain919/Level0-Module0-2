@@ -13,15 +13,18 @@ if __name__ == '__main__':
     window = turtle.Screen()
     window.bgcolor('white')
     
-    # Make a new turtle
+   Teal=turtle.Turtle
+
+    Teal(10)
+
+    Teal.color('green')
+
+    for i in range(50)
+        Teal(5*i)
+        Teal(360/7)
+        Teal
     
-    # This code sets our shape to a turtle
-    
-    # Set your turtle's speed (0=fastest, 1=slowest, 10=faster)
-    
-    # Set your turtle's color using .color('green')
-    
-    # Use a loop to repeat a the code below 50 times
+    # Use a loop to repeat the code below 50 times
         
         # Set the turtle color to a random color
 
