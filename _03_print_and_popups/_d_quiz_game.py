@@ -1,7 +1,29 @@
 from tkinter import messagebox, simpledialog, Tk
 
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
-    
+if __name__ == '__main__':
+    window = Tk()
+    window.withdraw()
+    S = 0
+    Q = simpledialog.askstring('Hi', 'Did the San Diego Padres win yesterday?')
+    if Q == 'no':
+        S+=1
+    else:
+        S-=1
+
+    P = simpledialog.askstring('Hi', 'Which pitcher has the best ERA on the Padres?')
+    if P == 'Joe Musgrove':
+        S+=1
+    else:
+        S-=1
+
+    N = simpledialog.askstring('Hi', 'Which pitcher has the most wins on the Padres?')
+    if N == 'Yu Darvish':
+        S+=1
+    else:
+        S-=1
+
+    messagebox.showinfo('Final Score', str(S))
     # Make a new window variable, window = Tk()
     
     # Hide the window using the window's .withdraw() method

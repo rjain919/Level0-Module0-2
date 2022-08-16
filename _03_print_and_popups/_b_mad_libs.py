@@ -2,6 +2,15 @@ from tkinter import messagebox, simpledialog, Tk
 
 # Create an if-main code block, *hint, type main then ctrl+space to auto-complete
 if __name__ == '__main__':
+    window=Tk()
+    window.withdraw()
+    messagebox.showinfo("If you find yourself having to cross a piranha-infested river, here's how to do it...")
+    A = simpledialog.askstring('Mad Libs', 'Can you name an adjective?')
+    L = simpledialog.askstring('Mad Libs', 'Can you name a liquid?')
+    B = simpledialog.askstring('Mad Libs', 'Can you name a body part?')
+    V = simpledialog.askstring('Mad Libs', 'Can you name a verb?')
+    P = simpledialog.askstring('Mad Libs', 'Can you name a place?')
+
     # Make a new window variable, window = Tk()
 
     # Hide the window using the window's .withdraw() method
@@ -27,13 +36,13 @@ if __name__ == '__main__':
     #       other parts of the story.
 
     story = (
-        "Piranhas are more [**adjective**] during the day, so cross the river at\n"
-        "night. Piranhas are attracted to fresh [**type of liquid**] and will most\n"
-        "likely take a bite out of your [**body part**] if you [**verb**]. Whatever\n"
+        "Piranhas are more "+A+ " during the day, so they cross the river at\n"
+        "night. Piranhas are attracted to fresh "+L+ " and will most\n"
+        "likely take a bite out of your "+B+ " if you "+V+ ". Whatever\n"
         "you do, if you have an open wound, try to find another way to get "
-        "back to the [**place**]. Good luck!"
+        "back to the "+P+ ". Good luck!"
     )
-
+    messagebox.showinfo('Mad Libs', story)
     # Make a pop-up that contains the final story. The \n escape characters add
     # line breaks to the story. If you need to, move them around to make your
     # story look better in the pop-up

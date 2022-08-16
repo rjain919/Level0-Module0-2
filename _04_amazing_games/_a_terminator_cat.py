@@ -58,7 +58,14 @@ if __name__ == '__main__':
     #    c. Rename the image something short (e.g. cat.gif)
     #    d. Save the image to your computer's desktop
     #    e. Drag and drop the image into this python package
-    
+
+    set_background('bigEyedCat.gif')
+    Teal=turtle.Turtle()
+    Teal.color('red')
+    Teal.pencolor('red')
+    Teal.width(0)
+    Teal.speed(0)
+
     # 2. Call the set_background() function with your variable inside of the parenthesis
     #    for example, set_background(bg_image)
 

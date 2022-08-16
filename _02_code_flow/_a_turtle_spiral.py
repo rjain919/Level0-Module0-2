@@ -13,16 +13,15 @@ if __name__ == '__main__':
     window = turtle.Screen()
     window.bgcolor('white')
     
-   Teal=turtle.Turtle
-
-    Teal(10)
+    Teal = turtle.Turtle()
 
     Teal.color('green')
 
-    for i in range(50)
-        Teal(5*i)
-        Teal(360/7)
-        Teal
+    for i in range(50):
+        Teal.color(get_random_color())
+        Teal.forward(5*i)
+        Teal.right(360/7)
+        Teal.width(i)
     
     # Use a loop to repeat the code below 50 times
         

@@ -21,13 +21,23 @@ if __name__ == '__main__':
     colors = ('red', 'blue', 'green', 'yellow', 'orange')
     
     # Make a new turtle
-    
-    # Make the turtle shape 'turtle', .shape('turtle')
-    
-    # Set the turtle speed to max (0)
-    
-    # Set the turtle width to 1
-    
+    Teal=turtle.Turtle()
+    Teal.shape('turtle')
+    Teal.speed(0)
+    Teal.width(1)
+    O = 5
+    A = 360/O
+    for i in range(360):
+        if i == 100:
+            Teal.width(2)
+        if i == 200:
+            Teal.width(3)
+        Teal.color(get_next_color(i))
+        Teal.forward(i)
+        Teal.right(A+1)
+
+    Teal.hideturtle()
+
     # Create a variable to hold the number of sides in a pentagon
     
     # Create a variable to be the angle of 360 divided by the sides variable

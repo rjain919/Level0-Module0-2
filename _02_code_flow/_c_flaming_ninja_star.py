@@ -19,7 +19,26 @@ if __name__ == '__main__':
 
     baseSize = 200          # the size of the black part of the star
     flameSize = 130         # the length of the flaming arms
-    
+
+    Teal=turtle.Turtle()
+    Teal.shape('turtle')
+    Teal.width(2)
+    Teal.speed(0)
+
+    for i in range(25):
+        Teal.fillcolor('orange')
+        Teal.begin_fill()
+        Teal.right(360/8)
+        Teal.forward(64)
+        Teal.left(40)
+        Teal.forward(flameSize)
+        Teal.right(170)
+        Teal.forward(flameSize)
+        Teal.right(62)
+        Teal.forward(baseSize)
+        Teal.end_fill()
+
+
     # Make a new turtle
     
     # Make the turtle shape 'turtle', .shape('turtle')
@@ -28,7 +47,7 @@ if __name__ == '__main__':
     
     # Set the turtle speed to 0 (fastest)
     
-    # Use a for loop to repeat all of the code below ONE time (we will change
+    # Use a for loop to repeat all the code below ONE time (we will change
     # this later)
         
         # Set the turtle .fillcolor() to orange

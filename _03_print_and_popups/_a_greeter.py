@@ -2,7 +2,14 @@ from tkinter import messagebox, simpledialog, Tk
 
 # Create an if-main code block 
 if __name__ == '__main__':
-    
+
+    window = Tk()
+    window.withdraw()
+    N = simpledialog.askstring('hi', 'What is your name?')
+    messagebox.showinfo('hi',N)
+    print('I hope the Padres win today, unlike their game yesterday.')
+    messagebox.showerror()
+
     # Make a new window variable, window = Tk()
     
     # Hide the window using the window's .withdraw() method
