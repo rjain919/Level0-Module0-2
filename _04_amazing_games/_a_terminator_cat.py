@@ -77,7 +77,7 @@ if __name__ == '__main__':
     # 5. Set the turtle width to 0 so no outlines are drawn
 
     # 6. Set the turtle speed to 0 (fastest)
-
+Teal.speed(0)
     # 7. Run the program and click on one of the cat's eyes. 
     #    The x,y position of the eye will be printed at the bottom of your
     #    processing window.
