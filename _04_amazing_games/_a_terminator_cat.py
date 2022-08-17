@@ -44,8 +44,12 @@ def key_pressed():
     # when you press the space bar. Run the program to test it.
 
     # 10. Increment the x and y variables of the 2 eye variables by 5:
-    #     left_eye.x += 5
-    
+    left_eye.x += 5
+    right_eye.x += 5
+    left_eye.y += 5
+    right_eye.y += 5
+    left_eye.draw()
+    right_eye.draw()
     # 11. Call the .draw() method for both eye variables.
 
 
@@ -77,7 +81,7 @@ if __name__ == '__main__':
     # 5. Set the turtle width to 0 so no outlines are drawn
 
     # 6. Set the turtle speed to 0 (fastest)
-Teal.speed(0)
+
     # 7. Run the program and click on one of the cat's eyes. 
     #    The x,y position of the eye will be printed at the bottom of your
     #    processing window.
@@ -87,8 +91,10 @@ Teal.speed(0)
     
     # 8. After you've found the x and y for the eyes create 2 eye variables
     #    and initialize them:
-    #    left_eye  = Eye(eye=my_turtle, x=-34, y=11, radius=30)
-    #    right_eye = Eye(eye=my_turtle, x=40, y=-5, radius=30)
+    left_eye  = Eye(eye=Teal, x=-27, y=5, radius=30)
+    right_eye = Eye(eye=Teal, x=50, y=-10, radius=30)
+    left_eye.draw()
+    right_eye.draw()
 
     # 9. Call the .draw() method on BOTH eye variables
 
