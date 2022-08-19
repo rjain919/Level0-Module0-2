@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Level0-Module1" />
     <orderEntry type="module" module-name="Level0-Module2" />
+    <orderEntry type="module" module-name="Rocketship" />
   </component>
 </module>
